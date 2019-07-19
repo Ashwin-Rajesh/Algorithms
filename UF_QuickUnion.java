@@ -24,8 +24,9 @@ public class QuickUnion
 	
 	union(): 	Function connects two points whose indices are given
 	To connect two points together, we change the id[]
-	of one point to the index of the other. This takes
-	*constant time*.
+	of root of one point to the index of the root of 
+	the other. This takes *linear time*. Most time is
+	used to compute root.
 	
 	root():		Calculates the 'root' of the point whose index is given
 	Is a recurssive function that returns the index
