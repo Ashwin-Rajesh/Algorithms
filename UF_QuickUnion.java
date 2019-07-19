@@ -19,12 +19,18 @@ public class QuickUnion
 	stores index of its immediate neighbour. So, to
 	check connection, we need to find the 'root' of the
 	points, ie, the point whose id[] is equal to its index,
-	and compare their roots.
+	and compare their roots. Takes *linear time*. Most
+	time is used to compute root.
 	
 	union(): 	Function connects two points whose indices are given
 	To connect two points together, we change the id[]
 	of one point to the index of the other. This takes
 	*constant time*.
+	
+	root():		Calculates the 'root' of the point whose index is given
+	Is a recurssive function that returns the index
+	of point whose id[] is equal to its index. Takes
+	*linear time*
 	-----------------------------------------------
 	*/
 	private int[] id;
