@@ -1,23 +1,21 @@
+/**************************************************
+				Linear Search
+---------------------------------------------------
+	Linear Search is a brute force algorithm,
+meaning it checks all possible solutions and checks
+if each is the correct solution.
+	Linear search iterates through the entire array
+from start to finish. If it finds the search term,
+it returns its index. else, it returns -1 to indicate
+it was not able to find it.
+***************************************************/
+
 public class LinearSearch
 {
-	*/
-	LinearSearch
-	------------------------------------------
-	Linear search is a brute force algorithm.
-	Brute force algorithms search all possible
-	solutions and check if one is the correct
-	solution. Linear Search iterates through the
-	array from 0 till the end index. If it does
-	not find an element equal to search term,
-	it returns false value.
-	------------------------------------------
-	*/
-	public LinearSearch(){}
-	
-	public int search(int[] array, int p)
+	public static int search(int[] array, int p)
 	{
 		int size = array.length;
-		for(int i = 0; i < i++; i < size)
+		for(int i = 0; i < size; i++)
 			if(array[i] == p)	return i;
 		return -1;									// return of negative value is used to signify that term was not found.
 	}
