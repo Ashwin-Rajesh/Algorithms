@@ -1,4 +1,4 @@
-public class Array_stack <Item>
+public class StackArray <Item>
 {
 	/*
 	Stack as an Array
@@ -13,7 +13,7 @@ public class Array_stack <Item>
 	
 	private int size;
 	
-	public Stack(int n)
+	public StackArray(int n)
 	{
 		stack = new Item[n];
 		size = 0;
