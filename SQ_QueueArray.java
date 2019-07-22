@@ -12,7 +12,7 @@ constructor during initialisation.
 
 public class QueueArray <Item>
 {
-	Item[] queue;
+	private Item[] queue;
 	
 	private int beg;
 	
@@ -20,7 +20,7 @@ public class QueueArray <Item>
 	
 	public QueueArray(int n)
 	{
-		queue = new Item[n];
+		queue = (Item[])new Object[n];
 		beg = 0;
 		end = 0;
 	}
