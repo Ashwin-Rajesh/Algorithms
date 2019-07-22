@@ -25,10 +25,12 @@ public class BinarySearch
 		int mid = low + (high - low)/2;
 		if(array[mid] == p)
 			return mid;
-		if(array[low] == p)
-			return low;
-		if(array[high] == p)
-			return high;
+			return -1;
+		if(mid == low)
+		{
+		    if(array[high] == p)    return high;
+		    return -1;
+		}
 		if(low == high)
 			return -1;
 		if(p > array[mid])
