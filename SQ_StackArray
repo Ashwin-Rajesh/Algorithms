@@ -21,7 +21,7 @@ public class StackArray <Item>
 	
 	public void push(Item item)
 	{
-		if(size >= item.length())	throw new java.lang.IndexOutOfBoundsException("The stack is full");
+		if(size >= stack.length())		throw new java.lang.IndexOutOfBoundsException("The stack is full");
 		else
 		
 		stack[size] = item;
