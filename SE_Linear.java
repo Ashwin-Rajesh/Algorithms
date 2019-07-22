@@ -1,5 +1,5 @@
 /**************************************************
-				Linear Search
+		Linear Search
 ---------------------------------------------------
 	Linear Search is a brute force algorithm,
 meaning it checks all possible solutions and checks
