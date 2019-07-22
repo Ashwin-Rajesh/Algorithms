@@ -1,15 +1,18 @@
+/***************************************************
+		Queue As Array
+----------------------------------------------------
+	Queues implement the FIFO(First In First Out)
+concept. That is, the first element entered is the one
+that is retreived the first.
+
+	Here, queue is implemented as a fixed length
+array. The max length needed has to be passed to the
+constructor during initialisation.
+****************************************************/
+
 public class QueueArray <Item>
 {
-	/*
-	Queue as Array
-	-----------------------------------------------------
-	Queue implements the FIFO concept(First In First Out).
-	The first element to be entered is retreived first.
-	
-	Here, queue is implemented as an array.
-	-----------------------------------------------------
-	*/
-	private Item[] queue;
+	Item[] queue;
 	
 	private int beg;
 	
@@ -24,7 +27,7 @@ public class QueueArray <Item>
 	
 	public void push(Item item)
 	{
-		if(end >= queue.length())
+		if(end >= queue.length)
 		{
 			if(beg == 0)						throw new java.lang.IndexOutOfBoundsException("The queue is full");
 			
