@@ -10,7 +10,7 @@ array. The max length needed has to be passed to the
 constructor during initialisation.
 ****************************************************/
 
-public class QueueArray <Item>
+public class SQ_QueueArray <Item>
 {
 	private Item[] queue;
 	
@@ -18,7 +18,7 @@ public class QueueArray <Item>
 	
 	private int end;
 	
-	public QueueArray(int n)
+	public SQ_QueueArray(int n)
 	{
 		queue = (Item[])new Object[n];
 		beg = 0;
