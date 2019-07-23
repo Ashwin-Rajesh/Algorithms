@@ -1,20 +1,17 @@
+/*************************************************
+		Weighted Quick Union
+--------------------------------------------------
+	Weighted Quick Union is an improvement over
+Quick Union. The process of finding root is the
+bottneck in Quick Union, Because the 'trees' can
+get very tall. The trees can be made a bit flatter
+if the union process is 'weighed', i.e the smaller
+tree is attached onto the larger one, than vice-versa.
+This means average case performance of finding root
+improves.
+*************************************************/
 public class WeightedQuickUnion
-{
-	/*
-	About WeightedQuickUnion
-	-----------------------------------------------
-	Weighted Quick Union is a small improvement over
-	Quick Union, that reduces steps needed to find a root
-	in worst case. The array, id[] stores connected points'
-	index. Another array, size[] is needed to keep size of
-	trees in track. This will be referred when the size is
-	checked while connecting elements together. Smaller trees
-	are connected onto the root of larger ones. This can help
-	keep the tree flat, improving time complexity without any 
-	side-effects.
-	-----------------------------------------------
-	*/
-  
+{  
 	private int[] id;
 	
 	private int[] size;
@@ -26,7 +23,7 @@ public class WeightedQuickUnion
 		for (int i = 0; i < N; i++)
 		{
 			id[i] = i;
-			size[i] = i;
+			size[i] = 1;
 		}
 	}
 	
