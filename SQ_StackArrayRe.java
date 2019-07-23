@@ -10,13 +10,13 @@ halved. This resizing is an expensive process. This
 way of resizing reduces frequency of resizing needed.
 ****************************************************/
 
-public class ResizeableStackArray <Item>
+public class SQ_StackArrayRe <Item>
 {
 	private Item[] stack;
 	
 	private int size;				// Note : not actual size of array, but number of elements stored in stack
 	
-	public ResizeableStackArray()
+	public SQ_StackArrayRe()
 	{
 		stack = (Item[]) new Object[1];
 		size = 0;
