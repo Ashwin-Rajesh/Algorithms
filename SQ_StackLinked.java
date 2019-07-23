@@ -9,7 +9,7 @@ only a pointer to the last node. This node switches to
 the next when that value is retreived.
 *******************************************************/
 
-public class StackLinkedList <Item>
+public class SQ_StackLinked <Item>
 {
 	private class Node
 	{
@@ -20,7 +20,7 @@ public class StackLinkedList <Item>
 	
 	private Node end;
 	
-	public StackLinkedList()
+	public SQ_StackLinked()
 	{
 		end = null;
 	}
