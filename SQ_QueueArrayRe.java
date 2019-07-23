@@ -10,7 +10,7 @@ is halved.
 	The resizing process is expensive, so it continuous
 resizing has ti be avoided, without wasting too much memory.
 *********************************************************/
-public class ResizeableQueueArray<Item>
+public class SQ_QueueArrayRe <Item>
 {
 	private Item[] queue;
 	
@@ -18,7 +18,7 @@ public class ResizeableQueueArray<Item>
 	
 	private int end;
 	
-	public ResizeableQueueArray()
+	public SQ_QueueArrayRe()
 	{
 		queue = (Item[]) new Object[1];
 		beg = 0;
