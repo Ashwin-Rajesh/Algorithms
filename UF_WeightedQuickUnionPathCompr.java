@@ -1,28 +1,25 @@
-public class WeightedQuickUnion
+/*******************************************************
+	Weighted Quick Union with Path Compression
+--------------------------------------------------------
+	Path compression is a technique in which the trees
+in Quick Union is made flatter by changing id[] of the elements
+to that of a point lower on the tree dynamically, while 
+traversing through the tree when computing root. There are
+2 ways in which it is implemented here:
+
+1) A 2-pass variation in which the id is set to the root of
+the tree after computing root. This is better in the long run.
+
+2) A single- pass variation which sets the id to that of the
+points grandfather. This is better in the short run.
+*******************************************************/
+public class UF_WeightedQuickUnionPathCompr
 {
-	/*
-	WeightedQuickUnionPathCompr
-	------------------------------------------
-	This implements Weighted quick union, but adds
-	path compression, a system in which the root function
-	compresses the path to the root, by setting id[] of
-	that point is set to the root.This reduces steps 
-	needed to compute root to a very low
-	number, and very high long-term improvements are observed.
-	
-	There is also a one-pass variation possible,
-	which sets id[] of each point to that of
-	its grand-parent, halving path length to root.
-	It saves time on the short term, but compression
-	is not as effective, hence it is less effective
-	in the long term.
-	------------------------------------------
-	*/
 	private int[] id;
 	
 	private int[] size;
 	
-	public QuickUnion(int N)
+	public UF_WeightedQuickUnionPathCompr(int N)
 	{
 		id = new int[N];
 		size = new int[N];
