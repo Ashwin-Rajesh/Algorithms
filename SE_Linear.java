@@ -10,7 +10,7 @@ it returns its index. else, it returns -1 to indicate
 it was not able to find it.
 ***************************************************/
 
-public class LinearSearch
+public class SE_Linear
 {
 	public static int search(int[] array, int p)
 	{
