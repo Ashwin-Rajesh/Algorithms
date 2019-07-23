@@ -1,34 +1,23 @@
-public class QuickFind
+/***********************************************
+		Quick Find
+------------------------------------------------
+	Quick Find is a solution to the union-find
+problem. It stores an id, for each point, which
+can be used to identify connected points. All connected
+points have the same id. 
+	This makes checking if two points are 
+connected very easy and fast(constant time), hence 
+the name, Quick Find. Union, however is expensive.
+The whole set of points have to searched for those
+having id equal to one of them, and then their
+id has to be changed to that of the other.
+***********************************************/
+
+public class UF_QuickFind
 {
-	/*
-	About QuickFind
-	-----------------------------------------------
-	The array id[] stores a number for each point. The
-	points are represented by numbers from 0, and this
-	number can be called their 'index'. The structure 
-	of Quick find is such that the value stored in id[]
-	for each index is same for all connected points.
-	
-	constructor():	Initialises id[]
-	All points are initialised with id[] equal to their
-	index. This takes *linear time*
-	
-	connected(): 	Function checks if two points of given indices are connected
-	The structure of Quick find is such that the value
-	stored in id[] for each index is same for all 
-	connected points. So, to check if two points are
-	connected, we just need to check the value of 
-	id[] at that index. So, find takes *constant time*.
-	
-	union(): 	Function connects two points whose indices are given
-	To connect two points together, we change the id[]
-	of all points connected to one point to the id[]
-	of the other. This takes *linear time*.
-	-----------------------------------------------
-	*/
 	private int[] id;
 	
-	public QuickFind(int N)
+	public UF_QuickFind(int N)
 	{
 		id = new int[N];
 		for(int i = 0; i < N; i++)
