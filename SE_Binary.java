@@ -13,7 +13,7 @@ middle of the search range.
 searched. It is implemented as a recursive function.)
 ****************************************************/
 
-public class BinarySearch
+public class SE_Binary
 {	
 	public static int search(int[] array, int p)
 	{
