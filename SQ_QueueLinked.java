@@ -10,7 +10,7 @@ of the beginning. The nodes are added to the end and removed
 from the beginning.
 ********************************************************/
 
-public class QueueLinkedList <Item>
+public class SQ_QueueLinked <Item>
 {
 	private class Node
 	{
@@ -23,7 +23,7 @@ public class QueueLinkedList <Item>
 	
 	private Node beg;
 	
-	public QueueLinkedList()
+	public SQ_QueueLinked()
 	{
 		end = null;
 		beg = null;
