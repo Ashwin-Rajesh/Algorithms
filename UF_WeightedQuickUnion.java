@@ -10,13 +10,13 @@ tree is attached onto the larger one, than vice-versa.
 This means average case performance of finding root
 improves.
 *************************************************/
-public class WeightedQuickUnion
+public class UF_WeightedQuickUnion
 {  
 	private int[] id;
 	
 	private int[] size;
 	
-	public QuickUnion(int N)
+	public UF_WeightedQuickUnion(int N)
 	{
    		id = new int[N];
 		size = new int[N];
