@@ -1,42 +1,30 @@
-public class QuickUnion
+/***********************************************
+		Quick Union
+------------------------------------------------
+	Quick Union is a solution to the Union Find
+problem. It does this in a similiar way to QuickFind,
+by storing an id[] for each point in the network.
+However, all connected points need nod have the same
+id. The data structure works by storing the id of a
+point as the position or index of some point it is 
+directly connected to. Each point will have a
+'root' id, the index of the point with which it
+is connected to, which has its index as its id.
+This can be thought of as a tree-like structure.
+	When two points are connected, The id
+of one of their roots is the index of the root of
+the other point. To check if two points are
+connected, their roots are calculated. If they are
+equal, they are connected.
+	The process of computing root is the bottleneck
+here. It has linear complexity.
+***********************************************/
+
+public class UF_QuickUnion
 {
-	/*
-	About QuickUnion
-	-----------------------------------------------
-	The array id[] stores a number for each point. The
-	points are represented by numbers from 0, and this
-	number can be called their 'index'. The structure 
-	of Quick Union is such that the value stored in id[]
-	of an index of a point will be of points immediately
-	connected to it.
-	
-	constructor():	Initialises id[]
-	All points are initialised with id[] equal to their
-	index. This takes *linear time*
-	
-	connected(): 	Function checks if two points of given indices are connected
-	The structure of Quick Union is such that the id[]
-	stores index of its immediate neighbour. So, to
-	check connection, we need to find the 'root' of the
-	points, ie, the point whose id[] is equal to its index,
-	and compare their roots. Takes *linear time*. Most
-	time is used to compute root.
-	
-	union(): 	Function connects two points whose indices are given
-	To connect two points together, we change the id[]
-	of root of one point to the index of the root of 
-	the other. This takes *linear time*. Most time is
-	used to compute root.
-	
-	root():		Calculates the 'root' of the point whose index is given
-	Is a recurssive function that returns the index
-	of point whose id[] is equal to its index. Takes
-	*linear time*
-	-----------------------------------------------
-	*/
 	private int[] id;
 	
-	public QuickUnion(int N)
+	public UF_QuickUnion(int N)
 	{
 		id = new int[N];
 		for (int i = 0; i < N; i++)
