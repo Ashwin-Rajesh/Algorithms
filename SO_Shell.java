@@ -24,7 +24,7 @@ For this given set, the worst case performance is
 n^(3/2).
 ************************************************/
 
-public class SO_Selection()
+public class SO_Shell()
 {
 	public void sort(Comparable[] array)
 	{
