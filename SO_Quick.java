@@ -62,7 +62,7 @@ public class SQ_Quick
 		array[j] = temp;
 	}
 	
-	public void suffle(Comparable[] array)
+	public void shuffle(Comparable[] array)
 	{
 		Random random = new Random();
 		int n = array.length;
