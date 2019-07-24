@@ -4,4 +4,5 @@ This repository stores several algorithms, learned mostly during this introducto
 Here are the abbreviations for some files:
 SQ  : Stacks and Queues
 UF  : Union Find
-SE  : Search algorithms
+SE  : Searching
+SO  : Sorting
