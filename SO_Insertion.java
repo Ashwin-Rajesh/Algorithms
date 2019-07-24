@@ -15,7 +15,7 @@ workst case it takes n^2/2 compares and exchanges.
 
 public class SO_Insertion()
 {
-	public sort(Comparable[] array)
+	public void sort(Comparable[] array)
 	{
 		int n = array.length;
 		for(int i = 1; i < n; i++)
