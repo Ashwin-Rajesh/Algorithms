@@ -14,7 +14,7 @@ of initial array arrangement.
 
 public class SO_Selection()
 {
-	public sort(Comparable[] array)
+	public void sort(Comparable[] array)
 	{
 		int n = array.length;
 		for(int i = 0; i < n - 1; i++)
