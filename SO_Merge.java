@@ -10,7 +10,8 @@ merging is done by the merge() function. Really, all
 the sorting is done in the merge() function. The sort()
 functions are for providing the recursive character.
 	Note that size of array needs to be a power
-of two.
+of two to work reliably. The sort is done in 
+n * log(n) compares.
 ************************************************/
 
 public class SO_Merge()
