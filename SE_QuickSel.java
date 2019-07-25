@@ -7,7 +7,7 @@ to quick sort, hence the name. It uses the same
 partition() function.
 *******************************************/
 
-public class MS_QuickSel
+public class SE_QuickSel
 {
 	public Comparable select(Comparable[] array, int k)
 	{
