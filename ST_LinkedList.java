@@ -28,7 +28,10 @@ public class ST_LinkedList<Key, Value>
 		while(true)
 		{
 			if(temp.k.equals(k))
+			{
+				temp.v = v;
 				return;
+			}
 			if(temp.next == null)
 				break;
 			temp = temp.next;	
@@ -131,7 +134,7 @@ public class ST_LinkedList<Key, Value>
 		
 		while(true)
 		{
-			kys.push(temp.key);
+			kys.push(temp.k);
 			
 			if(temp.next == null)
 				break;
