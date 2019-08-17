@@ -25,14 +25,13 @@ public class SE_Binary
 		int mid = low + (high - low)/2;
 		if(array[mid] == p)
 			return mid;
+		if(high >= low)
 			return -1;
 		if(mid == low)
 		{
 		    if(array[high] == p)    return high;
 		    return -1;
 		}
-		if(low == high)
-			return -1;
 		if(p > array[mid])
 		{
 			return search(array,mid,high,p);
