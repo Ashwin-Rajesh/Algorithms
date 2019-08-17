@@ -1,3 +1,13 @@
+/**********************************************
+	Symbol Table using Linked List
+-----------------------------------------------
+	Symol tables are like dictionaries, mapping
+some 'key' to some value. We can retrieve values
+by passing the key. Here, this is done using a linked
+list with the node storing keys and values. Performance
+is linear for all operations.
+**********************************************/
+
 public class ST_LinkedList<Key, Value>
 {
 	private class Node
